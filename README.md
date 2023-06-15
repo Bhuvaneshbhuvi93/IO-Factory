@@ -19,3 +19,11 @@ The Python-based programme just has one function, max_profit(time_unit), which a
 ## Usage
 
 Call the'max_profit' function with the desired time unit as the input to run the programme. A tuple comprising the development plan and the maximum profits will be returned.
+
+```python
+time_unit = 7
+earnings, developed = max_profit(time_unit)
+print("Time Unit:", time_unit)
+print("Earnings: $", earnings)
+print("Development Plan:", developed)
+```
