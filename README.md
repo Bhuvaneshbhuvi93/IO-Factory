@@ -33,3 +33,34 @@ Earnings: $ 1500
 Solutions:
 T: 1 P: 0 C: 0
 ```
+
+# Water Tank Problem
+
+This is a web application that solves the water tank problem and visualizes the solution. Given a sequence of block heights, the application calculates the units of water stored and displays the result using a table representation.
+
+## Features
+
+- Input block heights separated by commas
+- Calculates the units of water stored
+- Displays the result in units
+- Visualizes the water tank using a table
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+
+## Usage
+
+1. Clone the repository:
+2. Navigate to the project directory:
+3. Open the `index.html` file in a web browser.
+4. Enter the block heights in the input field, separated by commas.
+5. Click the "Calculate" button to calculate the units of water stored.
+6. The result will be displayed, and the water tank will be visualized using a table.
+
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
