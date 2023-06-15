@@ -27,3 +27,9 @@ print("Time Unit:", time_unit)
 print("Earnings: $", earnings)
 print("Development Plan:", developed)
 ```
+```output
+Time Unit: 7
+Earnings: $ 1500
+Solutions:
+T: 1 P: 0 C: 0
+```
