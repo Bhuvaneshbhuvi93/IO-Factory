@@ -29,9 +29,14 @@ print("Development Plan:", developed)
 ```
 ```output
 Time Unit: 7
-Earnings: $ 1500
-Solutions:
-T: 1 P: 0 C: 0
+Earnings: $ 3000
+Solution: T: 0, P: 1, C: 0
+Time Unit: 8
+Earnings: $ 4500
+Solution: T: 1, P: 0, C: 0
+Time Unit: 13
+Earnings: $ 16500
+Solution: T: 2, P: 0, C: 0
 ```
 
 # Water Tank Problem
