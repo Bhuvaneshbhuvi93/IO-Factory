@@ -81,4 +81,4 @@ This is a web application that solves the water tank problem and visualizes the 
 ## Screenshots
 
 ![Screenshot 1](https://github.com/Bhuvaneshbhuvi93/IO-Factory/blob/main/Bhuvaneshwar/IO-Factory-main/screenshots/screenshot3.JPG)
-![Screenshot 2](https://github.com/Bhuvaneshbhuvi93/IO-Factory/blob/main/screenshots/screenshot4.JPG)
+![Screenshot 2](https://github.com/Bhuvaneshbhuvi93/IO-Factory/blob/main/Bhuvaneshwar/IO-Factory-main/screenshots/screenshot4.JPG)
