@@ -10,33 +10,35 @@ The Max Profit Problem, which requires figuring out the best mix of building kin
 
 Mr. X owns a wide expanse of land in Mars Land, and he has the option of turning each plot into a theatre, bar, or business park. The amount of time and land needed for each form of building and the revenue it generates when it is occupied vary. The objective is to identify the building combination that generates the highest earnings over a specific time frame.
 
-Problem Statement:
-The Max Profit Problem involves optimizing the allocation of tasks within a given time unit to maximize the total profit earned. Each task has a specific duration and profit associated with it. The objective is to select the tasks that yield the highest total profit, while considering the constraint of the available time unit.
 
-Approach and Algorithm:
+## Approach and Algorithm:
 The problem can be solved using a dynamic programming approach. Here is a step-by-step explanation of the algorithm:
 
-Initialize an array, arr, with three elements representing the count of tasks: [0, 0, 0] (T: Time, P: Profit, C: Cost).
-Define a helper function, find(n), that takes the remaining time unit (n) as a parameter.
-Inside the find() function:
-Create an array, prof, with three elements initialized to 0 to represent the potential profits for each task type.
-Check if the remaining time unit (n) is less than 4. If so, return 0 as there are no more tasks that can be performed.
-Calculate the potential profits (prof) for each task type based on the remaining time unit:
-If n is greater than or equal to 4, subtract 4 from n and calculate the profit for task type T: prof[0] = (n - 4) * 1000.
-If n is greater than or equal to 5, subtract 5 from n and calculate the profit for task type P: prof[1] = (n - 5) * 1500.
-If n is greater than or equal to 10, subtract 10 from n and calculate the profit for task type C: prof[2] = (n - 10) * 3000.
-Find the maximum profit from the prof array.
-Increment the count of the corresponding task type in the arr array based on the task type with the maximum profit.
-Recursively call the find() function with the reduced time unit and update the arr array.
-Return the sum of the maximum profit and the recursive call to obtain the total earnings.
-Function Documentation:
+-Initialize an array, arr, with three elements representing the count of tasks: [0, 0, 0] (T: Time, P: Profit, C: Cost).
+-Define a helper function, find(n), that takes the remaining time unit (n) as a parameter.
+-Inside the find() function:
+   *Create an array, prof, with three elements initialized to 0 to represent the potential profits for each task type.
+   *Check if the remaining time unit (n) is less than 4. If so, return 0 as there are no more tasks that can be performed.
+   *Calculate the potential profits (prof) for each task type based on the remaining time unit:
+     *If n is greater than or equal to 4, subtract 4 from n and calculate the profit for task type T: prof[0] = (n - 4) * 1000.
+     *If n is greater than or equal to 5, subtract 5 from n and calculate the profit for task type P: prof[1] = (n - 5) * 1500.
+     *If n is greater than or equal to 10, subtract 10 from n and calculate the profit for task type C: prof[2] = (n - 10) * 3000.
+   *Find the maximum profit from the prof array.
+   *Increment the count of the corresponding task type in the arr array based on the task type with the maximum profit.
+   *Recursively call the find() function with the reduced time unit and update the arr array.
+   *Return the sum of the maximum profit and the recursive call to obtain the total earnings.
+   
+## Function Documentation:
 The max_profit(n) function takes an integer n representing the available time unit as input. It returns a tuple containing the maximum earnings and a formatted string representing the count of tasks for each type (T, P, C).
+
 Parameters:
-n (int): The available time unit.
+-n (int): The available time unit.
+
 Returns:
-earnings (int): The maximum earnings that can be obtained.
-solution (str): A formatted string representing the count of tasks for each type (T, P, C).
-Time and Space Complexity:
+-earnings (int): The maximum earnings that can be obtained.
+-solution (str): A formatted string representing the count of tasks for each type (T, P, C).
+
+## Time and Space Complexity:
 The time complexity of the algorithm is O(n) because the function makes recursive calls for each reduced time unit. The space complexity is O(n) as well, considering the function stack and the arr array.
 
 ## Implementation 
