@@ -21,25 +21,25 @@ The problem can be solved using a dynamic programming approach. Here is a step-b
 
 -Inside the find() function:
 
-   *Create an array, prof, with three elements initialized to 0 to represent the potential profits for each task type.
+   -Create an array, prof, with three elements initialized to 0 to represent the potential profits for each task type.
    
-   *Check if the remaining time unit (n) is less than 4. If so, return 0 as there are no more tasks that can be performed.
+   -Check if the remaining time unit (n) is less than 4. If so, return 0 as there are no more tasks that can be performed.
    
-   *Calculate the potential profits (prof) for each task type based on the remaining time unit:
+   -Calculate the potential profits (prof) for each task type based on the remaining time unit:
    
-     *If n is greater than or equal to 4, subtract 4 from n and calculate the profit for task type T: prof[0] = (n - 4) * 1000.
+   -If n is greater than or equal to 4, subtract 4 from n and calculate the profit for task type T: prof[0] = (n - 4) * 1000.
      
-     *If n is greater than or equal to 5, subtract 5 from n and calculate the profit for task type P: prof[1] = (n - 5) * 1500.
+   -If n is greater than or equal to 5, subtract 5 from n and calculate the profit for task type P: prof[1] = (n - 5) * 1500.
      
-     *If n is greater than or equal to 10, subtract 10 from n and calculate the profit for task type C: prof[2] = (n - 10) * 3000.
+   -If n is greater than or equal to 10, subtract 10 from n and calculate the profit for task type C: prof[2] = (n - 10) * 3000.
      
-   *Find the maximum profit from the prof array.
+   -Find the maximum profit from the prof array.
    
-   *Increment the count of the corresponding task type in the arr array based on the task type with the maximum profit.
+   -Increment the count of the corresponding task type in the arr array based on the task type with the maximum profit.
    
-   *Recursively call the find() function with the reduced time unit and update the arr array.
+   -Recursively call the find() function with the reduced time unit and update the arr array.
    
-   *Return the sum of the maximum profit and the recursive call to obtain the total earnings.
+   -Return the sum of the maximum profit and the recursive call to obtain the total earnings.
    
 ## Function Documentation:
 
@@ -47,12 +47,13 @@ The max_profit(n) function takes an integer n representing the available time un
 
 Parameters:
 
--n (int): The available time unit.
+n (int): The available time unit.
 
 Returns:
 
--earnings (int): The maximum earnings that can be obtained.
--solution (str): A formatted string representing the count of tasks for each type (T, P, C).
+earnings (int): The maximum earnings that can be obtained.
+
+solution (str): A formatted string representing the count of tasks for each type (T, P, C).
 
 ## Time and Space Complexity:
 
