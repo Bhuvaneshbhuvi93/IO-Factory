@@ -70,20 +70,29 @@ The Python-based programme just has one function, max_profit(time_unit), which a
 Call the'max_profit' function with the desired time unit as the input to run the programme. A tuple comprising the development plan and the maximum profits will be returned.
 
 ```python
-# Test cases
+# Test case
 time_unit = 7
 earnings, solution = max_profit(time_unit)
 print("Time Unit:", time_unit)
 print("Earnings: $", earnings)
 print("Solution:", solution)
 
+# Test case
 time_unit = 8
 earnings, solution = max_profit(time_unit)
 print("Time Unit:", time_unit)
 print("Earnings: $", earnings)
 print("Solution:", solution)
 
+# Test case
 time_unit = 13
+earnings, solution = max_profit(time_unit)
+print("Time Unit:", time_unit)
+print("Earnings: $", earnings)
+print("Solution:", solution)
+
+# Test case
+time_unit = 42
 earnings, solution = max_profit(time_unit)
 print("Time Unit:", time_unit)
 print("Earnings: $", earnings)
@@ -92,13 +101,16 @@ print("Solution:", solution)
 ```output
 Time Unit: 7
 Earnings: $ 3000
-Solution: T: 0, P: 1, C: 0
+Solution: T: 1, P: 0, C: 0
 Time Unit: 8
 Earnings: $ 4500
 Solution: T: 1, P: 0, C: 0
 Time Unit: 13
 Earnings: $ 16500
 Solution: T: 2, P: 0, C: 0
+Time Unit: 42
+Earnings: $ 234000
+Solution: T: 8, P: 0, C: 0
 ```
 
 # Water Tank Problem
