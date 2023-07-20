@@ -92,6 +92,13 @@ print("Earnings: $", earnings)
 print("Solution:", solution)
 
 # Test case
+time_unit = 45
+earnings, solution = max_profit(time_unit)
+print("Time Unit:", time_unit)
+print("Earnings: $", earnings)
+print("Solution:", solution)
+
+# Test case
 time_unit = 42
 earnings, solution = max_profit(time_unit)
 print("Time Unit:", time_unit)
@@ -101,16 +108,19 @@ print("Solution:", solution)
 ```output
 Time Unit: 7
 Earnings: $ 3000
-Solution: T: 1, P: 0, C: 0
+Solution: ['T: 0 P: 1 C: 0', 'T: 1 P: 0 C: 0']
 Time Unit: 8
 Earnings: $ 4500
-Solution: T: 1, P: 0, C: 0
+Solution: ['T: 1 P: 0 C: 0']
 Time Unit: 13
 Earnings: $ 16500
-Solution: T: 2, P: 0, C: 0
+Solution: ['T: 2 P: 0 C: 0']
+Time Unit: 45
+Earnings: $ 271000
+Solution: ['T: 8 P: 1 C: 0']
 Time Unit: 42
 Earnings: $ 234000
-Solution: T: 8, P: 0, C: 0
+Solution: ['T: 7 P: 1 C: 0', 'T: 8 P: 0 C: 0']
 ```
 
 # Water Tank Problem
